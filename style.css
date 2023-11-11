@@ -188,6 +188,7 @@ h2::after {
   content: "TOP";
   font-size: 16px;
   background-color: #ffe70e;
+  color: #444;
   font-weight: bold;
   display: inline-block;
   padding: 5px 10px;
