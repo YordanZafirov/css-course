@@ -60,6 +60,7 @@ h1 {
 h2 {
   font-size: 20px;
   margin-bottom: 30px;
+  position: relative;
 }
 
 h3 {
@@ -180,5 +181,17 @@ h1::first-letter {
 }
 
 h3 + p::first-line{
-  color: red;
+  /* color: red; */
+}
+
+h2::after {
+  content: "TOP";
+  font-size: 16px;
+  background-color: #ffe70e;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -15px;
+  right: -25px;
 }
