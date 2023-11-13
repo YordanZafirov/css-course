@@ -168,7 +168,6 @@ nav a:link {
   display: block; */
 
   margin-right: 30px;
-  margin-top: 10px;
   display: inline-block;
 }
 
@@ -208,7 +207,7 @@ h2::after {
 }
 
 /* FLOATS */
-.author-image {
+/* .author-image {
   float: left;
 }
 
@@ -226,7 +225,7 @@ h1 {
   clear: both;
 } */
 
-.clearfix {
+/*.clearfix {
   clear: both;
   content: "";
   display: block;
@@ -244,4 +243,54 @@ aside {
 
 footer {
   clear: both;
+} */
+
+/* FLEXBOX */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author-box {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 10px;
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.related-link:link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.related-author {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.row{
+  display: flex;
+  gap: 75px;
+  align-items: flex-start;
+}
+
+article {
+  flex: 1;
+}
+
+aside {
+  flex: 0 0 300px;
 }
