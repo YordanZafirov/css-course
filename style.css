@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -16,7 +17,7 @@ body {
 }
 
 .container {
-  width: 70%;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -37,8 +38,7 @@ aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
-  padding: 50px 0;
-  width: 500px;
+  padding: 50px 40px;
 }
 
 h1,
@@ -79,6 +79,7 @@ h3 {
 h4 {
   font-size: 16px;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 p {
@@ -121,6 +122,7 @@ li:last-child {
 
 .related {
   list-style: none;
+  margin-left: 0;
 }
 
 /* this wont work */
@@ -188,9 +190,9 @@ h1::first-letter {
   margin-right: 5px;
 }
 
-h3 + p::first-line {
-  /* color: red; */
-}
+/* h3 + p::first-line {
+  color: red;
+} */
 
 h2::after {
   content: "TOP";
@@ -203,4 +205,43 @@ h2::after {
   position: absolute;
   top: -15px;
   right: -25px;
+}
+
+/* FLOATS */
+.author-image {
+  float: left;
+}
+
+.author {
+  float: left;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+h1 {
+  float: left;
+}
+
+/* .clear{
+  clear: both;
+} */
+
+.clearfix {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+article {
+  width: 825px;
+  float: left;
+}
+
+aside {
+  width: 300px;
+  float: right;
+}
+
+footer {
+  clear: both;
 }
